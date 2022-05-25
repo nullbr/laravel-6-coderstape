@@ -8,6 +8,8 @@ class HelloController extends Controller
 {
     public function index()
     {
-        return view('hello.index');
+        $services = \App\Service::all();
+
+        return view('hello.index', compact('services'));
     }
 }
