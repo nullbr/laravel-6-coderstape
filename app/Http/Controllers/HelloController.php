@@ -10,6 +10,6 @@ class HelloController extends Controller
     {
         $services = \App\Service::all();
 
-        return view('hello.index', compact('services'));
+        return view('service.index', compact('services'));
     }
 }

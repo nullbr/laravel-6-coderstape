@@ -15,4 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('hello', 'HelloController@index');
+Route::get('service', 'ServiceController@index');
+Route::post('service', 'ServiceController@store');
