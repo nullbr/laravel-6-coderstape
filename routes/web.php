@@ -11,10 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::get('service', 'ServiceController@index');
 Route::post('service', 'ServiceController@store');
 

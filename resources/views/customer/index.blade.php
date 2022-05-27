@@ -1,6 +1,10 @@
 <h1>Customers</h1>
 
-<a href="/customers/create">Add New Customer</a>
+<div class="d-flex">
+    <a href="/customers/create">Add New Customer</a>
+    <a href="/customers?active=1">Active</a>
+    <a href="/customers?active=0">Inactive</a>
+</div>
 
 @forelse($customers as $customer)
     <p><strong>
